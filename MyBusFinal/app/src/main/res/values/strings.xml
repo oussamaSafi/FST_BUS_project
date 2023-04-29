@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FST Bus</string>
+    <string name="title_activity_bus1_gmap">bus1_gmap</string>
+    <string name="title_activity_bus2_gmap">bus2_gmap</string>
+    <string name="title_activity_bus3_gmap">bus3_gmap</string>
+    <string name="title_activity_bus4_gmap">bus4_gmap</string>
+    <string name="title_activity_bus5_gmap">bus5_gmap</string>
+</resources>
