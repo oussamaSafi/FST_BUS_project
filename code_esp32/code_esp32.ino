@@ -8,11 +8,11 @@
 #define RX_PIN 16
 #define TX_PIN 17
 
-#define WIFI_SSID "azerty"
-#define WIFI_PASSWORD "123456789E"
+#define WIFI_SSID "*******Secret***************"
+#define WIFI_PASSWORD "*******Secret**************"
 
-#define FIREBASE_HOST "https://my-bus-final-default-rtdb.firebaseio.com/"
-#define FIREBASE_AUTH "AIzaSyAGkegz-UP_A015MVRaTy_bdzkWApNM7IY"
+#define FIREBASE_HOST "***********Secret*****************"
+#define FIREBASE_AUTH "********Secret********************"
 
 SoftwareSerial gpsSerial(RX_PIN, TX_PIN);
 TinyGPSPlus gps;
