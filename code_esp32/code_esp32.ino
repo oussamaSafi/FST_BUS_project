@@ -76,6 +76,8 @@ void loop() {
   
 }
 
+//function that connects the esp32 dev board to Wi-Fi
+
 void connectToWifi() {
   WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
   lcd.clear();
@@ -91,6 +93,8 @@ void connectToWifi() {
   lcd.print("Wi-Fi connected");
 }
 
+//function that connects to firebase realtime database
+
 void connectToFirebase() {
   Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
   lcd.clear();
@@ -105,6 +109,8 @@ void connectToFirebase() {
   lcd.setCursor(0,0);
   lcd.print("Firebase connected");
 }
+
+//Function that sends latitude and longitude coordinates to firebase realtime database
 
 void sendPositionToFirebase(float latitude, float longitude) {
   if (WiFi.status() != WL_CONNECTED) {
