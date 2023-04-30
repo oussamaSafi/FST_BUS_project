@@ -116,12 +116,12 @@ void sendPositionToFirebase(float latitude, float longitude) {
 
   Firebase.setFloat(firebaseData, "/Buses/Bus1/latitude", latitude);
   Firebase.setFloat(firebaseData, "/Buses/Bus1/longitude", longitude);
+  lcd.setCursor(0,0);
+  lcd.print("coordinates ");
   lcd.setCursor(0,1);
-  lcd.print("Latitude: ");
-  lcd.print(latitude, 6); // display up to 6 decimal places
-  lcd.setCursor(0,2);
-  lcd.print("Longitude: ");
-  lcd.print(longitude, 6); // display up to 6 decimal places
+  lcd.print(latitude, 3);
+  lcd.print("--");
+  lcd.print(longitude, 3); // display up to 3 decimal places
 }
 
 //-------------interrupt------------------------------
